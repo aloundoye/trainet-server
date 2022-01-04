@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "formations",
+  "info": {
+    "singularName": "formation",
+    "pluralName": "formations",
+    "displayName": "Formation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "objectif": {
+      "type": "text"
+    },
+    "contenu": {
+      "type": "text"
+    },
+    "duree": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "reference": {
+      "type": "string"
+    },
+    "prix": {
+      "type": "decimal"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "presentiel",
+        "distance"
+      ]
+    },
+    "certification": {
+      "type": "string"
+    },
+    "public_cible": {
+      "type": "text"
+    },
+    "fiche_inscription": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "fiche_formation": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "condition_participation": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    }
+  }
+}

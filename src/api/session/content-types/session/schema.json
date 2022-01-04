@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sessions",
+  "info": {
+    "singularName": "session",
+    "pluralName": "sessions",
+    "displayName": "Session",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "datetime"
+    },
+    "date_inscription": {
+      "type": "datetime"
+    },
+    "Pays": {
+      "type": "string"
+    },
+    "ville": {
+      "type": "string"
+    }
+  }
+}

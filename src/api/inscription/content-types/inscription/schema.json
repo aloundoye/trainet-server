@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inscriptions",
+  "info": {
+    "singularName": "inscription",
+    "pluralName": "inscriptions",
+    "displayName": "Inscription"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    }
+  }
+}

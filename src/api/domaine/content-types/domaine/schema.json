@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "domaines",
+  "info": {
+    "singularName": "domaine",
+    "pluralName": "domaines",
+    "displayName": "Domaine",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    }
+  }
+}

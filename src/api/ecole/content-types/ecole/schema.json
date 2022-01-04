@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ecoles",
+  "info": {
+    "singularName": "ecole",
+    "pluralName": "ecoles",
+    "displayName": "Ecole"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "presentation": {
+      "type": "text"
+    },
+    "infos": {
+      "type": "text"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "catalogue": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
