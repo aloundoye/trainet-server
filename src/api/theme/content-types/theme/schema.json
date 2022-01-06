@@ -4,7 +4,8 @@
   "info": {
     "singularName": "theme",
     "pluralName": "themes",
-    "displayName": "Theme"
+    "displayName": "Theme",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,12 @@
   "attributes": {
     "nom": {
       "type": "string"
+    },
+    "domaine": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::domaine.domaine",
+      "inversedBy": "themes"
     }
   }
 }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "ecole",
     "pluralName": "ecoles",
-    "displayName": "Ecole"
+    "displayName": "Ecole",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,22 +22,29 @@
       "type": "text"
     },
     "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "catalogue": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
     }
   }
 }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "temoignage",
     "pluralName": "temoignages",
-    "displayName": "Temoignage"
+    "displayName": "Temoignage",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,12 @@
   "attributes": {
     "titre": {
       "type": "string"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "temoignages"
     }
   }
 }

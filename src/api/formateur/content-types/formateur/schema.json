@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "formateurs",
+  "info": {
+    "singularName": "formateur",
+    "pluralName": "formateurs",
+    "displayName": "Formateur",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
