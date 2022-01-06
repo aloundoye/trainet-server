@@ -62,18 +62,6 @@
       "target": "plugin::users-permissions.role",
       "inversedBy": "users",
       "configurable": false
-    },
-    "temoignages": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::temoignage.temoignage",
-      "mappedBy": "users"
-    },
-    "inscriptions": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::inscription.inscription",
-      "mappedBy": "users"
     }
   }
 }

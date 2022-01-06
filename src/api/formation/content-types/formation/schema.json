@@ -78,6 +78,12 @@
         "files",
         "videos"
       ]
+    },
+    "theme": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::theme.theme",
+      "inversedBy": "formations"
     }
   }
 }

@@ -41,9 +41,9 @@
         "videos"
       ]
     },
-    "users": {
+    "user": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
     }
   }

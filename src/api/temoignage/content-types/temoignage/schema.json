@@ -15,10 +15,10 @@
     "titre": {
       "type": "string"
     },
-    "users": {
+    "demandeur": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
+      "target": "api::demandeur.demandeur",
       "inversedBy": "temoignages"
     }
   }

@@ -20,6 +20,12 @@
       "relation": "manyToOne",
       "target": "api::domaine.domaine",
       "inversedBy": "themes"
+    },
+    "formations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::formation.formation",
+      "mappedBy": "theme"
     }
   }
 }

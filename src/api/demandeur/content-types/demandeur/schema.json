@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "demandeurs",
+  "info": {
+    "singularName": "demandeur",
+    "pluralName": "demandeurs",
+    "displayName": "Demandeur",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "temoignages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::temoignage.temoignage",
+      "mappedBy": "demandeur"
+    },
+    "inscriptions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::inscription.inscription",
+      "mappedBy": "demandeur"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "date_naissance": {
+      "type": "date"
+    },
+    "tel": {
+      "type": "string"
+    },
+    "lieu_naissance": {
+      "type": "string"
+    }
+  }
+}
